@@ -1,0 +1,57 @@
+/**
+ * The overall styles are set by the Nine Labs Design system
+ * http://designsystem.ninelabs.com
+ */
+
+@import url('//designsystem.ninelabs.com/assets/style.css');
+@import 'colors';
+
+/**
+ * Override default styles below
+ */
+
+#brandmob {
+
+  h4 {
+    color: $purple;
+  }
+
+  p a {
+    text-decoration: underline;
+    color: $purple;
+    &:hover {
+      color: $purple-dark;
+    }
+  }
+
+
+  header {
+    ul.navbar-nav li.nav-item a.nav-link {
+      border-bottom: 2px solid transparent;
+      &:hover, &.active {
+        color: $purple;
+        border-bottom: 2px solid $purple;
+      }
+    }
+  }
+
+  .highlight-bar {
+    background-color: $purple;
+  }
+
+  .sidebar li a {
+    color: $gray-90;
+    &:hover {
+      color: $purple;
+      text-decoration: underline;
+    }
+  }
+
+  .page-nav {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid $gray-30;
+  }
+
+
+}
